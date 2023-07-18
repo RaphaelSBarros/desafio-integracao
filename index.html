@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Desafio de Estágio</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Hepta+Slab:400,700|Lato:400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="models">
+        <div class="fashion-item">
+            <a href="">
+                <div class="fashion-item--img"><img src="" /></div>
+                <div class="fashion-item--add">+</div>
+            </a>
+            <div class="fashion-item--price">$ --</div>
+            <div class="fashion-item--name">--</div>
+            <div class="fashion-item--desc">--</div>
+        </div>
+        <div class="cart--item">
+            <img src="" />
+            <div class="cart--item-nome">--</div>
+            <div class="cart--item--qtarea">
+                <button class="cart--item-qtmenos">-</button>
+                <div class="cart--item--qt">1</div>
+                <button class="cart--item-qtmais">+</button>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="menu-openner"><span>0</span>🛒</div>
+    </header>
+    <main>
+        <h1>Fashion</h1>
+        <div class="fashion-area"></div>
+    </main>
+    <aside>
+        <div class="cart--area">
+            <div class="menu-closer">❌</div>
+            <h1>Suas Roupas</h1>
+            <div class="cart"></div>
+            <div class="cart--details">
+                <div class="cart--totalitem subtotal">
+                    <span>Subtotal</span>
+                    <span>$ --</span>
+                </div>
+                <div class="cart--totalitem desconto">
+                    <span>Desconto (-10%)</span>
+                    <span>$ --</span>
+                </div>
+                <div class="cart--totalitem total big">
+                    <span>Total</span>
+                    <span>$ --</span>
+                </div>
+                <div class="cart--finalizar">Finalizar a compra</div>
+            </div>
+        </div>
+    </aside>
+    <div class="fashionWindowArea">
+        <div class="fashionWindowBody">
+            <div class="fashionInfo--cancelMobileButton">Voltar</div>
+            <div class="fashionBig">
+                <img src="">
+            </div>
+            <div class="fashionInfo">
+                <h1>--</h1>
+                <div class="fashionInfo--desc">--</div>
+                <div class="fashionInfo--sizearea">
+                    <div class="fashionInfo--sector">Tamanho</div>
+                    <div class="fashionInfo--sizes">
+                        <div data-key="0" class="fashionInfo--size">PEQUENA <span>--</span></div>
+                        <div data-key="1" class="fashionInfo--size">MÉDIO <span>--</span></div>
+                        <div data-key="2" class="fashionInfo--size selected">GRANDE <span>--</span></div>
+                    </div>
+                </div>
+                <div class="fashionInfo--pricearea">
+                    <div class="fashionInfo--sector">Preço</div>
+                    <div class="fashionInfo--price">
+                        <div class="fashionInfo--actualPrice">$ --</div>
+                        <div class="fashionInfo--qtarea">
+                            <button class="fashionInfo--qtmenos">-</button>
+                            <div class="fashionInfo--qt">1</div>
+                            <button class="fashionInfo--qtmais">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="fashionInfo--addButton">Adicionar ao carrinho</div>
+                <div class="fashionInfo--cancelButton">Cancelar</div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="fashion.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
