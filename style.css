@@ -9,6 +9,9 @@ body{
     margin: 0;
     min-height: 100vh;
 }
+a{
+    text-decoration: none;
+}
 .models{
     display: none;
 }
@@ -20,9 +23,23 @@ header{
     right:0;
     height: 60px;
     background-color: #399ade;
-    display: none;
-    justify-content: flex-end;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 100px;
     align-items: center;
+    font-family: 'Hepta Slab', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.header .logo{
+    display: none;
+}
+.header .logo, .home{
+    padding: 5px 20px;
+    border-radius: 4px;
+    background-color: #a9dcff;
+    color: #000;
 }
 .menu-openner{
     margin-right: 15px;
@@ -59,11 +76,12 @@ main{
     padding: 20px;
 }
 h1{
+    margin: 50px;
     font-family: 'Hepta Slab', Arial, Helvetica, sans-serif;
 }
 .fashion-area{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
 }
 .fashion-item{
     text-align: center;
@@ -75,7 +93,6 @@ h1{
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-decoration: none;
 }
 .fashion-item--img{
     width: 200px;
@@ -85,16 +102,16 @@ h1{
     box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.2);
 }
 .fashion-item--img img{
-    width: 50%;
+    width: 100%;
     object-fit: contain;
-    height: 200px;
+    height: auto;
 }
 .fashion-item--add{
     width: 50px;
     height: 50px;
     line-height: 50px;
     border-radius: 25px;
-    background-color: #388bc5;
+    background-color: #999;
     text-align: center;
     color: #FFF;
     font-size: 22px;
@@ -103,7 +120,7 @@ h1{
     transition: all ease .2s;
 }
 .fashion-item a:hover .fashion-item--add{
-    background-color: #244c88;
+    background-color: #888;
 }
 .fashion-item--price{
     font-size: 15px;
@@ -180,12 +197,14 @@ h1{
     margin-top: 30px;
     margin-bottom: 10px;
 }
-.fashionInfo--sizes{
+.fashionInfo--sizes,
+.sizebay-area{
     display: inline-flex;
     border-radius: 10px;
     overflow: hidden;
 }
-.fashionInfo--size{
+.fashionInfo--size,
+.sizebay{
     padding: 10px 15px;
     color: #000;
     background-color: #EEE;
@@ -193,7 +212,10 @@ h1{
     font-weight: bold;
     cursor: pointer;
 }
-.fashionInfo--size:hover{
+.sizebay-area{
+    margin: 30px 0 0 0;
+}
+.fashionInfo--size:hover,.sizebay:hover{
     background-color: #CCC;
 }
 .fashionInfo--size.selected{
