@@ -32,9 +32,6 @@ header{
     font-family: 'Hepta Slab', Arial, Helvetica, sans-serif;
     font-size: 20px;
 }
-.header .logo{
-    display: none;
-}
 .header .logo, .home{
     padding: 5px 20px;
     border-radius: 4px;
